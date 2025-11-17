@@ -1,0 +1,411 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(214, 148, 192);
+}
+
+/* Header Styles start */
+
+/* Shopify Icon */
+.fa-shopify {
+  font-size: 30px;
+  color: #bb3282;
+}
+
+.fa-shopify:hover {
+  transform: scale(1.5);
+}
+
+.store-name {
+  font-size: 40px;
+  font-family: 'Georgia', serif;
+  color: #bb3282;
+  text-decoration: none;
+  margin-right: 200px;
+}
+
+/* Spacing Adjustments */
+.store-name {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+#hover:hover {
+  background-color: #80074d;
+  border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  z-index: 1;
+  min-width: 130px;
+  text-align: left;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #80074d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Login Button */
+.login-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #80074d;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: green;
+}
+
+/*Header style end */
+.image-container {
+  display: inline-blok;
+  overflow: hidden;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #b1205c;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* image slider start */
+.slider {
+  width: 100%;
+  height: 525px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  animation: slide 20s linear infinite;
+  height: 525px;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+/* image slider end */
+
+/* about us start */
+.about {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+
+.left img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.right {
+  width: 50%;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #a5217d;
+  text-align: justify;
+  background-color: white;
+}
+
+h3 {
+  text-align: leftr;
+  color: deeppink;
+}
+
+/* about us end */
+
+/* category start */
+
+.category_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  height: auto;
+}
+
+.category_container div {
+  width: 300px;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.category_container div span {
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(163, 66, 139);
+  position: relative;
+  left: 120px;
+  bottom: 40px;
+  border: none;
+}
+
+/* category end */
+
+/* form and map  start */
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Form Container */
+.form-container {
+  flex: 1;
+  background: #ffffff;
+  padding: 44px;
+  padding-left: 20px;
+  border: 2px solid #bb3282;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: inline;
+  margin-bottom: 18px;
+  padding-bottom: 50px;
+  color: #80074d;
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.namelabel {
+  padding-right: 30px;
+
+}
+
+.numberlabel {
+  padding-right: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea {
+  border-color: #84fab0;
+  outline: none;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+textarea {
+  display: inline;
+  width: 480px;
+}
+
+.button1 {
+  margin-left: 100px;
+  background: #84fab0;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  width: 50%;
+}
+
+.button1:hover {
+  background-color: #45a049;
+}
+
+/* Map Container */
+.map-container {
+  flex: 1;
+  background-color: #cccccc;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 2px solid #bb3282;
+  overflow: hidden;
+}
+
+iframe {
+  width: 800px;
+  height: 420px;
+  border: none;
+  border: 2px solid rgb(158, 42, 90);
+  margin-right: 50px;
+}
+
+/* form and map end */
+
+/* new footer start */
+.footer {
+  background-color: #333;
+  display: flex;
+}
+
+.div0 i {
+  font-size: 50px;
+  color: white;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.div1 {
+  font-size: 20px;
+  width: 30%;
+  height: 180px;
+  margin-left: 90px;
+  margin-bottom: 50px;
+  color: white;
+  margin-top: 25px;
+  display: block;
+  position: relative;
+}
+
+.div1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.div2 {
+  font-size: 20px;
+  width: 30%;
+  height: 180px;
+  margin-left: 80px;
+  color: white;
+  margin-top: 25px;
+  display: block;
+  position: relative;
+}
+
+.div2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.div3 {
+  color: white;
+  font-size: 20px;
+  width: 30%;
+  height: 180px;
+  margin-left: 120px;
+  margin-top: 25px;
+}
+
+.div0 i:hover {
+  color: #941879;
+  transform: scale(1.2);
+}
+
+.div1 p a:hover {
+  color: #941879;
+}
+
+.div2 p a:hover {
+  color: #941879;
+}
+
+.div3 p:hover {
+  color: #941879;
+
+}
+
+.div3 i:hover {
+  color: #941879;
+  transform: scale(1.5);
+}
+
+/* new fooer end */

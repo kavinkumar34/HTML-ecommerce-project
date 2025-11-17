@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>our online store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/shopify-brands-solid.svg">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    /* header start */
+
+
+    /* Shopify Icon */
+    .fa-shopify {
+      font-size: 30px;
+      color: #bb3282;
+    }
+
+    .fa-shopify:hover {
+      transform: scale(1.5);
+    }
+
+    .store-name {
+      font-size: 40px;
+      font-family: 'Georgia', serif;
+      color: #bb3282;
+      text-decoration: none;
+      margin-right: 200px;
+    }
+
+    /* Spacing Adjustments */
+    .store-name {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    #hover:hover {
+      background-color: #80074d;
+      border-radius: 4px;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      z-index: 1;
+      min-width: 130px;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #80074d;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Login Button */
+    .login-btn {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #80074d;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: green;
+    }
+
+    /* header end */
+
+    /* Header Styles */
+    .header1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 20px 20px;
+      margin-top: 20px;
+    }
+
+    /* Navigation Links */
+    .nav-links1 {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links1 a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links1 a:hover {
+      background-color: #80074d;
+      border-radius: 4px;
+    }
+
+    /* Search Box */
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .search-box button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #2196F3;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #1b7dc1;
+    }
+
+    /* header end */
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 5px;
+      background-color: white;
+      margin-top: 10px;
+    }
+
+    .grid-container1 {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      row-gap: 10px;
+      column-gap: 3px;
+      background: rgb(185, 177, 177);
+    }
+
+    .grid-container1 button {
+      background-color: black;
+      color: white;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 2px;
+
+    }
+
+    .grid-container1 button:hover {
+      color: black;
+      background-color: rgb(150, 23, 72);
+    }
+
+    /* new footer start */
+    .footer {
+      background-color: #333;
+      display: flex;
+    }
+
+    .div0 i {
+      font-size: 50px;
+      color: white;
+      margin-top: 25px;
+      margin-left: 30px;
+    }
+
+    .div1 {
+      font-size: 20px;
+      width: 30%;
+      height: 180px;
+      margin-left: 90px;
+      margin-bottom: 50px;
+      color: white;
+      margin-top: 25px;
+      display: block;
+      position: relative;
+    }
+
+    .div1 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .div2 {
+      font-size: 20px;
+      width: 30%;
+      height: 180px;
+      margin-left: 80px;
+      color: white;
+      margin-top: 25px;
+      display: block;
+      position: relative;
+    }
+
+    .div2 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .div3 {
+      color: white;
+      font-size: 20px;
+      width: 30%;
+      height: 180px;
+      margin-left: 120px;
+      margin-top: 25px;
+    }
+
+    .div0 i:hover {
+      color: #941879;
+      transform: scale(1.2);
+    }
+
+    .div1 p a:hover {
+      color: #941879;
+    }
+
+    .div2 p a:hover {
+      color: #941879;
+    }
+
+    .div3 p:hover {
+      color: #941879;
+
+    }
+
+    .div3 i:hover {
+      color: #941879;
+      transform: scale(1.5);
+    }
+
+    /* new fooer end */
+  </style>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="header">
+    <nav class="nav-links">
+      <span><i class="fa-brands fa-shopify"></i></span>
+      <span class="store-name">OUR ONLINE STORE</span>
+      <a href="homepage.html" id="hover">HOME</a>
+      <a href="about.html" id="hover">ABOUT</a>
+      <div class="dropdown">
+        <a href="#" id="hover">CATEGORY</a>
+        <div class="dropdown-content">
+          <a href="mensection.html">Men's Wear</a>
+          <a href="womensection.html">Women's Wear</a>
+          <a href="kidsection.html">Kids' Wear</a>
+        </div>
+      </div>
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="login.html" class="login-btn">LOGIN</a>
+    </nav>
+  </header>
+  <!-- Header end -->
+
+  <!-- header start -->
+  <header class="header1">
+    <nav class="nav-links1">
+      <a href="#">FORMAL</a>
+      <a href="#">CASUAL</a>
+      <a href="#">OVERCOATS</a>
+      <a href="#">PANTS</a>
+      <a href="#">SPORTCOATS</a>
+      <a href="#">SUITS</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button>Go</button>
+    </div>
+  </header>
+
+  <!-- header end -->
+
+  <div class="grid-container">
+    <div class="item1"><img
+        src="https://img.freepik.com/free-vector/flat-design-black-friday-banners-template_23-2148310541.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="450"></div>
+
+    <div class="item1"><img
+        src="https://img.freepik.com/free-psd/online-shopping-banner-design_23-2148552605.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt=" " width="430" height="450"></div>
+    <div class="item2"><img
+        src="https://img.freepik.com/free-psd/summer-sale-landing-page-template_23-2148622714.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="430" height="450"></div>
+  </div>
+
+  <h1
+    style="margin-bottom: 20px; font-size: 28px;color: #b1205c;text-align: center;font-weight: bold;text-transform: uppercase;">
+    NEW PRODUCTS</h1>
+  <div class="grid-container1">
+    <div><img
+        src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400848.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>SAREE</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/free-photo/woman-dress_1303-3793.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>CASUAL </p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/free-photo/beautiful-young-woman-wearing-sari_23-2149502978.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>SAREE</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/premium-photo/portrait-smiling-woman-with-shopping-blurred-city-background_160672-15221.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>FORMAL COAT</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/free-photo/girl-coat_1303-4462.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>FORMAL COAT</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/premium-photo/girl-branded-clothes-is-walking-autumn-park_128442-1433.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>CASUAL</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/premium-photo/beautiful-girl-autumn-seasonal-setting_69593-7111.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>FORMAL COAT</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+    <div><img
+        src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400844.jpg?ga=GA1.1.578271361.1733647862&semt=ais_hybrid"
+        alt="" width="335" height="340"> <span>
+        <h1>$500</h1>
+        <p>SAREE</p>
+        <P>size:32</P><button>ADD TO CARD</button>
+      </span></div>
+  </div>
+
+  <!-- footer start -->
+  <footer style="height: auto;margin-top: 5px;">
+    <div class="footer">
+      <div class="div0">
+        <i class="fa-brands fa-shopify"></i>
+      </div>
+      <div class="div1">
+        <p> <a href="">Home</a></p>
+        <p> <a href="">category</a></p>
+        <p><a href="">About</a></p>
+        <p><a href="">Cart</a>
+      </div>
+      <div class="div2">
+        <p> <a href="">Contact</a></p>
+        <p> <a href="">902555190</a></p>
+        <p><a href="">kavin@gmail.com</a></p>
+        <p><a href="">madurai</a>
+      </div>
+      <div class="div3">
+        <p> <i style=" padding-right: 5px;" class="fa-brands fa-whatsapp"></i>whatsapp</p>
+        <p> <i style=" padding-right: 5px;" class="fa-brands fa-instagram"></i>Instagram</p>
+        <p> <i style="padding-right: 5px;" class="fa-brands fa-facebook"></i>Facebook</p>
+        <p> <i style="padding-right: 5px;" class="fa-brands fa-twitter"></i>Twitter</p>
+      </div>
+    </div>
+  </footer>
+  <!-- new footer end -->
+
+</body>
+
+</html>
